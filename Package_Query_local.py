@@ -4,11 +4,11 @@ import re
 import pymysql
 
 db_settings = {
-            "host": "us-cdbr-east-03.cleardb.com",
+            "host": "127.0.0.1",
             "port": 3306,
-            "user": "bbc2aae40d6c0c",
-            "password": "32c57b02",
-            "db": "heroku_be356ab79cf3ea1",
+            "user": "root",
+            "password": "",
+            "db": "package",
             "charset": "utf8"
         }
 
@@ -97,7 +97,7 @@ class Package:
 '''
 
 
-package = Package("900875026491")  #建立package物件並導入package_num
+package = Package("01705500075")  #建立package物件並導入package_num
 print(package.capture())  #印出爬取結果
 
 lastdata = package.readlocal()
