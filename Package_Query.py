@@ -97,7 +97,7 @@ class Package:
 '''
 
 
-package = Package("900875026491")  #建立package物件並導入package_num
+package = Package("1825865941")  #建立package物件並導入package_num
 print(package.capture())  #印出爬取結果
 
 lastdata = package.readlocal()
